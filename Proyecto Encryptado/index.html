@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="recursosencryp/Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@1,300&family=Uchen&display=swap" rel="stylesheet"> 
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <div class="contenedor">
+                <header class="header">
+                    <h1 class="logo-img"><img src="recursosencryp/Logo@2x.png" alt="Logo ALura"></h1>
+            
+                    <h1 class="titulo">Encriptador de Texto</h1>
+                </header>
+                <main class="contenido">
+                    <section class="box-left">
+
+                        <h1 class="title-text">Ingrese Texto a Encriptar o Desencriptar</h1>
+                    <textarea name="input-text" id="input-text" cols="30" rows="10" onkeyup="this.value=this.value.toLowerCase()">  </textarea>
+                </main>
+                    
+                <aside id="box-front" >
+                    
+                        <img class="img-muneco" src="recursosencryp/Muñeco.png" alt="Muñeco alura">
+                        <h1 class="titulo-right">Ningún mensaje fue <br> encontrado</h1>
+
+                </aside>
+                <aside id="box-back">
+                        <h1 class="titulo-decodificador">Texto Desifrado:</h1>
+                        <p id="decodificador"></p>
+                        <input  id="btn-copy" type="submit" value="Copiar">
+
+                </aside>
+                    <div class="botones">
+                        <div>
+                            <p class="aviso"> Solo letras minúsculas y sin acentos</p>
+                            <div class="circle"></div>
+                            <p class="exclamacion"> ! </p>  
+                        </div>
+                            <input  class="btn-encriptar" type="submit" value="Encriptar">
+                            <input  class="btn-desencriptar" type="submit" value="Desencriptar">
+                        </div> 
+
+            </div>            
+        </main>  
+    </body>
+    <script src="script.js"></script>
+    </html>
